@@ -1,0 +1,10 @@
+C:\st&p (я)\otobrazhenie_poezdov\otobrazhenie_poezdov\bin\Debug\otobrazhenie_poezdov.exe.config
+C:\st&p (я)\otobrazhenie_poezdov\otobrazhenie_poezdov\bin\Debug\otobrazhenie_poezdov.exe
+C:\st&p (я)\otobrazhenie_poezdov\otobrazhenie_poezdov\bin\Debug\otobrazhenie_poezdov.pdb
+C:\st&p (я)\otobrazhenie_poezdov\otobrazhenie_poezdov\obj\Debug\otobrazhenie_poezdov.csprojResolveAssemblyReference.cache
+C:\st&p (я)\otobrazhenie_poezdov\otobrazhenie_poezdov\obj\Debug\otobrazhenie_poezdov.MainForm.resources
+C:\st&p (я)\otobrazhenie_poezdov\otobrazhenie_poezdov\obj\Debug\otobrazhenie_poezdov.Properties.Resources.resources
+C:\st&p (я)\otobrazhenie_poezdov\otobrazhenie_poezdov\obj\Debug\otobrazhenie_poezdov.csproj.GenerateResource.Cache
+C:\st&p (я)\otobrazhenie_poezdov\otobrazhenie_poezdov\obj\Debug\otobrazhenie_poezdov.exe
+C:\st&p (я)\otobrazhenie_poezdov\otobrazhenie_poezdov\obj\Debug\otobrazhenie_poezdov.pdb
+C:\st&p (я)\otobrazhenie_poezdov\otobrazhenie_poezdov\obj\Debug\otobrazhenie_poezdov.View.resources
