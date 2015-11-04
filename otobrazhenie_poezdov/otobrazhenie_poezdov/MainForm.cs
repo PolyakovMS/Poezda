@@ -24,7 +24,7 @@ namespace otobrazhenie_poezdov
         public MainForm() : this(300) { }
         public MainForm(int sizeField) : this(sizeField, 5) { }
         public MainForm(int sizeField, int amountTrains) : this (sizeField, amountTrains, 5) { }
-        public MainForm(int sizeField, int amountTrains, int amountStations) : this(sizeField, amountTrains, amountStations, 40) { }
+        public MainForm(int sizeField, int amountTrains, int amountStations) : this(sizeField, amountTrains, amountStations, 64) { }
         public MainForm (int sizeField, int amountTrains, int amountStations, int speed)
         {
             InitializeComponent();
@@ -45,8 +45,21 @@ namespace otobrazhenie_poezdov
 
         private void StartStop_btn_Click(object sender, EventArgs e)
         {
-            modelPlay = new Thread(model.Play);
-            modelPlay.Start();
+            if (model.status == Status.starting)
+            {
+                modelPlay.Abort();
+                model.status = Status.stoping;
+            }
+            else
+            {
+                model.status = Status.starting;
+                modelPlay = new Thread(model.Play);
+                modelPlay.Start();
+
+                view.Invalidate();
+            
+            }
+
 
 
         }

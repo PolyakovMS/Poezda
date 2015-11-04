@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
+
 
 namespace otobrazhenie_poezdov
 {
@@ -11,7 +13,10 @@ namespace otobrazhenie_poezdov
         int sizeField;
         int amountTrains;
         int amountStations;
-        int speed;
+        public int speed;
+
+        public Status status;
+
 
         public Trains trains;
 
@@ -24,12 +29,15 @@ namespace otobrazhenie_poezdov
 
             trains = new Trains();
 
+            status = Status.stoping; 
+
         }
 
         public void Play()
         {
             while(true)
             {
+                Thread.Sleep(speed);
                 trains.Run();
             }
         }

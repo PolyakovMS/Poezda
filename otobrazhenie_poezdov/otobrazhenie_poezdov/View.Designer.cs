@@ -37,7 +37,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "View";
             this.Size = new System.Drawing.Size(961, 409);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.View_Paint);
+            //this.Paint += new System.Windows.Forms.PaintEventHandler(this.View_Paint);
             this.ResumeLayout(false);
 
         }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
+
 
 namespace otobrazhenie_poezdov
 {
@@ -22,10 +24,29 @@ namespace otobrazhenie_poezdov
             
         }
 
-        private void View_Paint(object sender, PaintEventArgs e)
+        void Draw(PaintEventArgs e)
+        {
+            e.Graphics.DrawImage(model.trains.img, new Point(model.trains.x, model.trains.y));
+            if (model.status != Status.starting)
+                return;
+
+
+
+            Thread.Sleep(model.speed);
+            Invalidate();
+
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            Draw(e);
+
+        }
+
+        /*private void View_Paint(object sender, PaintEventArgs e)
         {
             //Graphics gr = CreateGraphics();
-            e.Graphics.DrawImage(model.trains.img, new Point(model.trains.x, model.trains.y));
-        }
+            
+        }*/
     }
 }
