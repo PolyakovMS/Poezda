@@ -35,7 +35,7 @@ namespace otobrazhenie_poezdov
 
         public void Play()
         {
-            while(true)
+            while(status == Status.starting)
             {
                 Thread.Sleep(speed);
                 trains.Run();

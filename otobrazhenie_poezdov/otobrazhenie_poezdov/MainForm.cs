@@ -63,5 +63,22 @@ namespace otobrazhenie_poezdov
 
 
         }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (modelPlay != null)
+            {
+                model.status = Status.stoping;
+                modelPlay.Abort();
+
+            }
+
+
+           DialogResult dr = MessageBox.Show("Вы уверены, что хотите выйти?","ST&P", MessageBoxButtons.YesNoCancel);
+            if (dr == DialogResult.Yes)
+                e.Cancel = false;
+            else
+                e.Cancel = true;
+        }
     }
 }
